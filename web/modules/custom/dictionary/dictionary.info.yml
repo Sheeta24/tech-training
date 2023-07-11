@@ -1,0 +1,5 @@
+name: dictionary
+type: module
+description: Provides a custom entity Dictionary
+core_version_requirement: ^10
+package: custom

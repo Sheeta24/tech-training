@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Demonstrates how to define a new plugin type.
+ */
+
+/**
+ * Implements hook_sandwich_info_alter().
+ *
+ * Any module can implement hook_sandwich_info_alter() and alter the definitions
+ * of all plugins discovered by the plugin manager.
+ *
+ * Note: Plugin definitions are cached after initially being discovered, and
+ * altered. Any changes you make here will require a cache clear to take effect.
+ *
+ * @see \Drupal\custom_plugin_type\SandwichPluginManager
+ */
+function custom_plugin_type_sandwich_info_alter(&$sandwich_plugin_info) {
+  // Let's change the 'description' property for all sandwiches.
+  foreach ($sandwich_plugin_info as $plugin_id => $plugin_definition) {
+    // Always uppercase the word rocket in sandwich descriptions.
+    $sandwich_plugin_info[$plugin_id]['description'] = str_replace(t('rocket'), t('ROCKET'), $sandwich_plugin_info[$plugin_id]['description']);
+  }
+}

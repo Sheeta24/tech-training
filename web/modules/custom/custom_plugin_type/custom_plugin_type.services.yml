@@ -1,0 +1,4 @@
+services:
+  plugin.manager.sandwich:
+    class: Drupal\custom_plugin_type\SandwichPluginManager
+    parent: default_plugin_manager

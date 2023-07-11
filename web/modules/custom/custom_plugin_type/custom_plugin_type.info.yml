@@ -1,0 +1,6 @@
+name: Custom Plugin Type
+type: module
+description: Provides a custom plugin type.
+package: Custom
+core_version_requirement: ^10
+

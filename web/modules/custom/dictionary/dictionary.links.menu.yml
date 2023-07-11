@@ -1,0 +1,9 @@
+# Define the menu links for this module
+
+entity.dictionary_term.collection:
+  title: 'Content Entity Example: terms Listing'
+  route_name: entity.dictionary_term.collection
+  description: 'List terms'
+  weight: 10
+
+

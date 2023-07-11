@@ -1,0 +1,7 @@
+custom_plugin_type.description:
+  path: '/custom-plugin-type'
+  defaults:
+    _controller: '\Drupal\custom_plugin_type\Controller\CustomPluginTypeController::description'
+    _title: 'Custom Plugin Type'
+  requirements:
+    _permission: 'access content'
