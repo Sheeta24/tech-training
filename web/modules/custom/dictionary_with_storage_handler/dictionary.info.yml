@@ -1,0 +1,5 @@
+name: dictionary
+type: module
+description: Provides a custom storage handler for custom entity Dictionary.
+core_version_requirement: ^10
+package: custom
