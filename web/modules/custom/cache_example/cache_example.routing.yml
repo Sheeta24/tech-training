@@ -1,0 +1,14 @@
+cache_example.content:
+  path: '/cache_example'
+  defaults:
+    _controller: '\Drupal\cache_example\Controller\TestController::content'
+    _title: 'Cache context example'
+  requirements:
+    _permission: 'access content'
+cache_example.latestNodes:
+  path: '/cache_tag_example'
+  defaults:
+    _controller: '\Drupal\cache_example\Controller\TestController::getNodes'
+    _title: 'Cache tag example'
+  requirements:
+    _permission: 'access content'
