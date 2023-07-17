@@ -1,0 +1,5 @@
+name: Lazy Builder Example
+type: module
+description: Demonstrate example of Lazy Builder.
+package: Custom
+core_version_requirement: ^10
