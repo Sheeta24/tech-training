@@ -1,0 +1,5 @@
+name: Ajax API Example
+type: module
+description: Demonstrate some example of Ajax API.
+package: Custom
+core_version_requirement: ^10
